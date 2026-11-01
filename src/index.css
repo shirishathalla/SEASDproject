@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-obsidian: #0B0D10;
+  --color-charcoal: #171A20;
+  --color-graphite: #222630;
+  --color-silver: #C5CAD3;
+  --color-softblue: #648BFF;
+  --color-vaultwhite: #F4F5F7;
+  --color-mutedgrey: #9299A5;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  body {
+    background-color: #0B0D10;
+    color: #F4F5F7;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+/* Custom sleek dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0D10;
+}
+::-webkit-scrollbar-thumb {
+  background: #222630;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #323846;
+}
+
+/* Background privacy shield when tab is inactive / auto-lock blur */
+.vault-privacy-blur {
+  filter: blur(20px) grayscale(80%);
+  pointer-events: none;
+  user-select: none;
+}

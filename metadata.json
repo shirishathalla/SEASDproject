@@ -1,0 +1,6 @@
+{
+  "name": "DocuVault - Secure AI Document Wallet",
+  "description": "Carry your identity securely, not your documents. Premium zero-knowledge encrypted personal document vault with AI classification, smart search, and family sharing.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
